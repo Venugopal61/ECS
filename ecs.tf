@@ -21,7 +21,7 @@ resource "aws_ecs_task_definition" "app" {
 
   container_definitions = jsonencode([{
     name      = "node-server"
-    image     = "andalike/node-server-8080-1"
+    image     = "venu/node-server-8080-1"
     essential = true
 
     portMappings = [{
